@@ -11,6 +11,6 @@ describe('HelloWorld', () => {
     const wrapper = mount(HelloWorld)
     await wrapper.setProps({ msg: '<われは海の子>' })
     const html = wrapper.html()
-    expect(html.includes('&lt;われは海の子&gt;'))
+    expect(html.includes('&lt;われは海の子&gt;')).toBe(true)
   })
 })
